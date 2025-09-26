@@ -20,6 +20,6 @@ public class BasicCalculator {
 //      Calculation and prints
         int calcValue = firstNumber * secondNumber;
 
-        System.out.printf("%d * %d = %d", firstNumber, secondNumber, calcValue);
+        System.out.printf("%d * %d = %d  ", firstNumber, secondNumber, calcValue);
     }
 }
