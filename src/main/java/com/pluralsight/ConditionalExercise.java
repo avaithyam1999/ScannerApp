@@ -12,7 +12,7 @@ public class ConditionalExercise {
 
         if (age >= 18) {
             System.out.println("You are an adult");
-        } else if (age <= 18) {
+        } else {
             System.out.println("You are not an adult yet.");
         }
 
@@ -20,13 +20,13 @@ public class ConditionalExercise {
         System.out.println("What is your grade in class: (A-F) ");
         char grade = scanner.next().charAt(0);
 
-        if (grade == 'A' || grade == 'a'){
+        if (grade == 'A' || grade == 'a') {
             System.out.println("Excellent!");
-        } else if (grade == 'B'|| grade == 'b') {
+        } else if (grade == 'B' || grade == 'b') {
             System.out.println("Good Job!");
-        } else if (grade == 'C'|| grade == 'c') {
+        } else if (grade == 'C' || grade == 'c') {
             System.out.println("You passed.");
-        } else if (grade == 'D'|| grade == 'd') {
+        } else if (grade == 'D' || grade == 'd') {
             System.out.println("Barely passed :0");
         } else {
             System.out.println("Failed womp womp");
@@ -52,8 +52,7 @@ public class ConditionalExercise {
 //        in java, to check if equal, you need to type out variable.equals(value) instead of variable == value
         if (userName.equals("admin") && passWord.equals("1234")) {
             System.out.println("Access Granted");
-        }
-        else {
+        } else {
             System.out.println("Can't get in");
         }
     }
