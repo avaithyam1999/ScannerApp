@@ -19,10 +19,12 @@ public class PayrollCalculator {
         System.out.print("How much do you get paid hourly? ");
         double payRate = scanner.nextDouble();
 
-//        calculate their pay for the week
-        double grossPay = hoursWorked * payRate;
-
 //        display employee's name and their gross pay at the end
-        System.out.printf("Employee Name: %s\nGross weekly pay: $%.2f", userName, grossPay);
+        double weekPay = payCalc(hoursWorked, payRate);
+        System.out.format("This week you will get paid $%.2f", weekPay);
+    }
+    //    calculate their pay for the week
+    public static double payCalc(double hoursWorked, double payRate) {
+        return hoursWorked * payRate;
     }
 }
